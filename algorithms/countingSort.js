@@ -13,17 +13,20 @@
 const countingSort = (array) => {
 
 	const size = array.length
-	let count = new Array(size).fill(0)
+	let max = Number.NEGATIVE_INFINITY
+	array.forEach(ele => {
+		if(max < ele) 
+			max = ele
+	})
+	let count = new Array(max+1).fill(0)
 	let output = new Array(size).fill(0)
-
-	for(let i = 0; i < size; i++) {
+	for(let i = 0; i < max+1; i++) {
 		count[array[i]] += 1
 	}
 
-	for(let i = 1; i < size; i++) {
+	for(let i = 1; i < max+1; i++) {
 		count[i] += count[i-1]
 	}
-
 	let i = 0
 	while(i < size) {
 		output[count[array[i]]-1] = array[i]

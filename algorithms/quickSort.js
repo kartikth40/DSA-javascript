@@ -28,7 +28,6 @@ const partition = (array, low, high) => {
 }
 
 const quickSort = (array, low, high) => {
-	const l = array.length
 	
 	if(low < high) {
 		let pi = partition(array, low, high)
