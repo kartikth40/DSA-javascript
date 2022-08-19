@@ -30,3 +30,10 @@ let searchIndex = binarySearch(arr, x)
 console.log("array -> "+arr)
 console.log("search -> "+x)
 console.log("Index -> "+searchIndex)
+
+
+// outputs 
+
+// array -> 3,7,5,8,1,4,0,9
+// search -> 1
+// Index -> 4

@@ -49,6 +49,13 @@ const radixSort = (array) => {
 
 
 let arr = [3,7,5,8,1,2,6,4,0,9]
+console.log(arr)
 radixSort(arr)
 
 console.log(arr)
+
+
+// outputs
+
+// [ 3, 7, 5, 8, 1, 4, 0, 9 ]
+// [ 0, 1, 3, 4, 5, 7, 8, 9 ]

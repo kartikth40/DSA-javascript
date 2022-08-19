@@ -40,6 +40,13 @@ const countingSort = (array) => {
 
 
 let arr = [3,7,5,8,1,2,6,4,0,9]
+console.log(arr)
 sortedArray = countingSort(arr)
 
 console.log(sortedArray)
+
+
+// outputs
+
+// [ 3, 7, 5, 8, 1, 2, 6, 4, 0, 9 ]
+// [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]

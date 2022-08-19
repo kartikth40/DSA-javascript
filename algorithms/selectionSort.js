@@ -25,6 +25,12 @@ const selectionSort = (array) => {
 
 
 let arr = [3,7,5,8,1,4,0,9]
+console.log(arr)
 let sortedArr = selectionSort(arr)
-
 console.log(sortedArr)
+
+
+// outputs
+
+// [ 3, 7, 5, 8, 1, 4, 0, 9 ]
+// [ 0, 1, 3, 4, 5, 7, 8, 9 ]
