@@ -1,4 +1,4 @@
-// COUNTING SORT
+// RADIX SORT
 
 // Time Complexity
 // best    - O(n + k) - where k is the max element in the array
@@ -10,18 +10,15 @@
 
 
 
-const countingSort = (array) => {
+const countingSort = (array, place) => {
 
 	const size = array.length
-	let max = Number.NEGATIVE_INFINITY
-	array.forEach(ele => {
-		if(max < ele) 
-			max = ele
-	})
+	const max = 9
 	let count = new Array(max+1).fill(0)
 	let output = new Array(size).fill(0)
 	for(let i = 0; i < size; i++) {
-		count[array[i]] += 1
+		index = parseInt(array[i] / place) % 10
+		count[index] += 1
 	}
 
 	for(let i = 1; i < max+1; i++) {
@@ -29,17 +26,29 @@ const countingSort = (array) => {
 	}
 	let i = 0
 	while(i < size) {
-		output[count[array[i]]-1] = array[i]
+		index = parseInt(array[i] / place) % 10
+		output[count[index]-1] = array[i]
 		count[array[i]] -=1
 		i++
 	}
 
-	return output
+	output.forEach((ele, i) => {
+		array[i] = output[i]
+	})
 	
+}
+
+const radixSort = (array) => {
+	const max = Math.max(...array)
+	let place = 1
+	while(parseInt(max/place) > 0) {
+		countingSort(array, place)
+		place *= 10
+	}
 }
 
 
 let arr = [3,7,5,8,1,2,6,4,0,9]
-sortedArray = countingSort(arr)
+radixSort(arr)
 
-console.log(sortedArray)
+console.log(arr)
