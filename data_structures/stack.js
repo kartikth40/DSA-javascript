@@ -14,15 +14,19 @@ class Stack {
 	}
 
 	push(ele) {
+		console.log("pushing...",ele)
 		this.stack.push(ele)
 	} 
 
 	pop() {
+		console.log("popping...",this.stack[this.stack.length-1])
 		return this.stack.pop()
 	}
 
 	peek() {
-		return this.stack[this.stack.length-1]
+		let peekElement = this.stack[this.stack.length-1]
+		console.log("peeking...",peekElement)
+		return peekElement
 	}
 
 	isEmpty() {
@@ -30,15 +34,12 @@ class Stack {
 	}
 
 	size() {
+		console.log("getting size...", this.stack.length)
 		return this.stack.length
 	}
 
-	clear() {
-		this.stack = []
-	}
-
 	print() {
-		console.log(this.stack) 
+		console.log("stack --->", this.stack) 
 	}
 }
 
@@ -50,8 +51,21 @@ stack.push(4)
 stack.push(6)
 
 stack.print()
-console.log(stack.size())
+stack.size()
 
 stack.pop()
 stack.print()
-console.log(stack.size())
+stack.size()
+
+
+// outputs
+
+// pushing... 0
+// pushing... 2
+// pushing... 4
+// pushing... 6
+// stack ->  [ 0, 2, 4, 6 ]
+// getting size... 4
+// popping... 6
+// stack ->  [ 0, 2, 4 ]
+// getting size... 3
