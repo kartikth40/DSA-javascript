@@ -7,8 +7,10 @@
 //         - O(V)
 
 const graphBFS = (graph, root) => {
+  let ans = []
   let visited = new Set()
   visited.add(root)
+  ans.push(root)
   let queue = new Queue()
   queue.enqueue(root)
 
@@ -20,10 +22,12 @@ const graphBFS = (graph, root) => {
     for (let neighbour of neighbours) {
       if (!visited.has(neighbour)) {
         visited.add(neighbour)
+        ans.push(neighbour)
         queue.enqueue(neighbour)
       }
     }
   }
+  return ans
 }
 
 const graph = new Graph(5)
