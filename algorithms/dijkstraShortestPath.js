@@ -1,10 +1,10 @@
 // DIJKSTRA'S SHORTEST PATH
 
 // Time Complexity
-//         - O()
+//         - O(Elog V)
 
 // Space Complexity
-//         - O()
+//         - O(V)
 
 // helper class for priority queue
 class PriorityQueue {
