@@ -1,10 +1,10 @@
 // TREE TRAVERSAL BFS
 
 // Time Complexity
-//         - O()
+//         - O(n)
 
 // Space Complexity
-//         - O()
+//         - O(n)
 
 class Node {
   constructor(data) {
