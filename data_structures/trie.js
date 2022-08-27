@@ -1,10 +1,11 @@
 // TRIE
 
 // Time Complexity
-// push    - O(a*n) where a is the avg length of each word and n is the no. of words to operate
+// Search, Insertion and Deletion
+//         - O(avg_word_length * number_of_words)
 
 // Space Complexity
-//         - O(s*a*n) where s is the alphabet size
+//         - O(alphabet_size * avg_word_length * number_of_words)
 
 class TrieNode {
   constructor(char) {
