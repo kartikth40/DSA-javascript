@@ -23,9 +23,10 @@ class TrieNode {
   }
 }
 
-class Trie {
-  constructor() {
+export default class Trie {
+  constructor(printAllSteps = false) {
     this.root = new TrieNode('')
+    this.printAllSteps = printAllSteps
   }
 
   getIndex(char) {
@@ -38,20 +39,20 @@ class Trie {
     str = str.toLowerCase()
     let currentNode = this.root
     let index = 0
-    console.log('Inserting', str, '...')
+    this.printAllSteps && console.log('Inserting', str, '...')
     for (let level = 0; level < str.length; level++) {
       index = this.getIndex(str[level])
 
       if (!currentNode.children[index]) {
         currentNode.children[index] = new TrieNode(str[level])
-        console.log('Inserting ', str[level])
+        this.printAllSteps && console.log('Inserting ', str[level])
       } else {
-        console.log('Already inserted', str[level])
+        this.printAllSteps && console.log('Already inserted', str[level])
       }
       currentNode = currentNode.children[index]
     }
     currentNode.markAsEnd()
-    console.log('===================')
+    this.printAllSteps && console.log('===================')
   }
 
   search(str) {
@@ -60,21 +61,21 @@ class Trie {
     str = str.toLowerCase()
     let currentNode = this.root
     let index = 0
-    console.log('Searching', str, '...')
+    this.printAllSteps && console.log('Searching', str, '...')
     for (let level = 0; level < str.length; level++) {
       index = this.getIndex(str[level])
 
       if (!currentNode.children[index]) {
-        console.log("'" + str + "' not found")
+        this.printAllSteps && console.log("'" + str + "' not found")
         return false
       }
       currentNode = currentNode.children[index]
     }
     if (currentNode && currentNode.isEnd) {
-      console.log("'" + str + "' found")
+      this.printAllSteps && console.log("'" + str + "' found")
       return true
     }
-    console.log("'" + str + "' not found")
+    this.printAllSteps && console.log("'" + str + "' not found")
     return false
   }
 }

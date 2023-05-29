@@ -1,7 +1,7 @@
 // QUEUE
 
 // Time Complexity
-// enqueue - O(1) 
+// enqueue - O(1)
 // dequeue - O(1)
 // peek    - O(1)
 
@@ -9,95 +9,92 @@
 //         - O(n)
 
 class Node {
-	constructor(data) {
-		this.data = data
-		this.next = null
-	}
+  constructor(data) {
+    this.data = data
+    this.next = null
+  }
 }
 
-class Queue {
-	constructor() {
-		this.front = null
-		this.rear = null
-		this.length = 0
-	}
+export default class Queue {
+  constructor(printAllSteps = false) {
+    this.front = null
+    this.rear = null
+    this.length = 0
+    this.printAllSteps = printAllSteps
+  }
 
-	enqueue(ele) {
-		console.log("enqueuing...",ele)
-		const node = new Node(ele)
+  enqueue(ele) {
+    this.printAllSteps && console.log('enqueuing...', ele)
+    const node = new Node(ele)
 
-		if(!this.front) {
-			this.front = node
-			this.rear = node
-		}
-		else {
-			this.rear.next = node
-			this.rear = node
-		}
+    if (!this.front) {
+      this.front = node
+      this.rear = node
+    } else {
+      this.rear.next = node
+      this.rear = node
+    }
 
-		this.length++
-	} 
+    this.length++
+  }
 
-	dequeue() {
-		if(!this.front) {
-			console.log("Queue is empty.")
-			return
-		}
+  dequeue() {
+    if (!this.front) {
+      this.printAllSteps && console.log('Queue is empty.')
+      return
+    }
 
-		let temp = this.front
-		console.log("dequeuing...",temp.data)
-		
-		this.front = this.front.next
+    let temp = this.front
+    this.printAllSteps && console.log('dequeuing...', temp.data)
 
-		if(!this.front) {
-			this.rear = null
-		}
+    this.front = this.front.next
 
-		this.length--
+    if (!this.front) {
+      this.rear = null
+    }
 
-		return temp.data
-	}
+    this.length--
 
-	peek() {
-		if(this.front) {
-			console.log("peeking...", this.front.data)
-			return this.front.data
-		}else {
-			console.log("Queue is empty.")
-			return
-		}
-	}
+    return temp.data
+  }
 
-	isEmpty() {
-		return !this.front && !this.rear
-	}
+  peek() {
+    if (this.front) {
+      this.printAllSteps && console.log('peeking...', this.front.data)
+      return this.front.data
+    } else {
+      this.printAllSteps && console.log('Queue is empty.')
+      return
+    }
+  }
 
-	size() {
-		console.log("getting size...", this.length)
-		return this.length
-	}
+  isEmpty() {
+    return !this.front && !this.rear
+  }
 
-	print() {
-		let cur = this.front
-		if(!cur) {
-			console.log("Queue is Empty")
-		} 
-		else {
-			let q = ""
-			while(cur) {
-				q += cur.data + " -> "
-				cur = cur.next
-			}
-			q += "null"
+  size() {
+    this.printAllSteps && console.log('getting size...', this.length)
+    return this.length
+  }
 
-			console.log(q)
+  print() {
+    let cur = this.front
+    if (!cur) {
+      console.log('Queue is Empty')
+    } else {
+      let q = ''
+      while (cur) {
+        q += cur.data + ' -> '
+        cur = cur.next
+      }
+      q += 'null'
 
-		}
-	}
+      console.log(q)
+    }
+  }
 }
 
-
-const queue = new Queue()
+const queue = new Queue(true)
 queue.enqueue(0)
 queue.enqueue(2)
 queue.enqueue(4)
@@ -109,7 +106,6 @@ queue.size()
 queue.dequeue()
 queue.print()
 queue.size()
-
 
 // outputs
 

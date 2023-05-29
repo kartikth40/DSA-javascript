@@ -8,9 +8,10 @@
 // Space Complexity
 //         - O(n)
 
-class MaxHeap {
-  constructor() {
+export class MaxHeap {
+  constructor(printAllSteps = false) {
     this.heap = []
+    this.printAllSteps = printAllSteps
   }
 
   heapify(heap, n, i) {
@@ -34,7 +35,7 @@ class MaxHeap {
   }
 
   add(ele) {
-    console.log('adding...', ele)
+    this.printAllSteps && console.log('adding...', ele)
 
     let size = this.heap.length
     if (size === 0) {
@@ -51,11 +52,11 @@ class MaxHeap {
   popMax() {
     let size = this.heap.length
     if (size === 0) {
-      console.log('heap is empty.')
+      this.printAllSteps && console.log('heap is empty.')
       return
     }
 
-    console.log('removing...', this.heap[0])
+    this.printAllSteps && console.log('removing...', this.heap[0])
 
     let temp = this.heap[0]
     this.heap[0] = this.heap[size - 1]
@@ -74,10 +75,10 @@ class MaxHeap {
   getMax() {
     let size = this.heap.length
     if (size !== 0) {
-      console.log('getting max...', this.heap[0])
+      this.printAllSteps && console.log('getting max...', this.heap[0])
       return this.heap[0]
     } else {
-      console.log('heap is empty.')
+      this.printAllSteps && console.log('heap is empty.')
       return
     }
   }
@@ -90,7 +91,7 @@ class MaxHeap {
 console.log('MAX HEAP')
 console.log()
 
-const maxHeap = new MaxHeap()
+const maxHeap = new MaxHeap(true)
 maxHeap.add(3)
 maxHeap.add(4)
 maxHeap.add(9)
@@ -106,6 +107,8 @@ maxHeap.popMax()
 maxHeap.print()
 
 // outputs
+
+// MAX HEAP
 
 // adding... 3
 // adding... 4
@@ -128,9 +131,10 @@ maxHeap.print()
 // Space Complexity
 //         - O(n)
 
-class MinHeap {
-  constructor() {
+export class MinHeap {
+  constructor(printAllSteps = false) {
     this.heap = []
+    this.printAllSteps = printAllSteps
   }
 
   heapify(heap, n, i) {
@@ -154,7 +158,7 @@ class MinHeap {
   }
 
   add(ele) {
-    console.log('adding...', ele)
+    this.printAllSteps && console.log('adding...', ele)
 
     let size = this.heap.length
     if (size === 0) {
@@ -171,11 +175,11 @@ class MinHeap {
   popMin() {
     let size = this.heap.length
     if (size === 0) {
-      console.log('heap is empty.')
+      this.printAllSteps && console.log('heap is empty.')
       return
     }
 
-    console.log('removing...', this.heap[0])
+    this.printAllSteps && console.log('removing...', this.heap[0])
 
     let temp = this.heap[0]
     this.heap[0] = this.heap[size - 1]
@@ -194,10 +198,10 @@ class MinHeap {
   getMin() {
     let size = this.heap.length
     if (size !== 0) {
-      console.log('getting max...', this.heap[0])
+      this.printAllSteps && console.log('getting max...', this.heap[0])
       return this.heap[0]
     } else {
-      console.log('heap is empty.')
+      this.printAllSteps && console.log('heap is empty.')
       return
     }
   }
@@ -211,7 +215,7 @@ console.log()
 console.log('MIN HEAP')
 console.log()
 
-const minHeap = new MinHeap()
+const minHeap = new MinHeap(true)
 minHeap.add(3)
 minHeap.add(4)
 minHeap.add(9)
@@ -227,6 +231,8 @@ minHeap.popMin()
 minHeap.print()
 
 // outputs
+
+// MIN HEAP
 
 // adding... 3
 // adding... 4

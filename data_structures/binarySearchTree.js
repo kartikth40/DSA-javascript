@@ -19,11 +19,19 @@ class TreeNode {
 }
 
 const inorder = (root) => {
-  if (root) {
-    inorder(root.left)
-    console.log(root.data)
-    inorder(root.right)
+  function helperFunc(root, arr) {
+    if (root) {
+      helperFunc(root.left, arr)
+      arr.push(root.data)
+      helperFunc(root.right, arr)
+    }
+    return arr
   }
+
+  const inorderedList = helperFunc(root, [])
+  console.log(inorderedList)
+
+  return inorderedList
 }
 
 const insertNode = (root, data) => {
@@ -97,17 +105,8 @@ inorder(root)
 
 // BST ->
 
-// 1
-// 3
-// 4
-// 6
-// 8
-// 10
+// [ 1, 3, 4, 6, 8, 10 ]
 
 // deleting node 3
 
-// 1
-// 4
-// 6
-// 8
-// 10
+// [ 1, 4, 6, 8, 10 ]
