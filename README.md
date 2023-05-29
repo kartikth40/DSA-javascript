@@ -18,14 +18,14 @@
 <details>
 <summary>Sorting</summary>
 <br>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>bubble sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>counting sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>heap sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>insertion sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>merge sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>quick sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>radix sort</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>selection sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/bubbleSort.js'>bubble sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/countingSort.js'>counting sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/heapSort.js'>heap sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/insertionSort.js'>insertion sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/mergeSort.js'>merge sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/quickSort.js'>quick sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/radixSort.js'>radix sort</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/selectionSort.js'>selection sort</a></li>
 <!-- <li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'></a></li> -->
 </details>
 
@@ -39,9 +39,9 @@
 <details>
 <summary>Graph Algos</summary>
 <br>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>BFS</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>DFS</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>dijkstra shortest path</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/graph-BFS.js'>BFS</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/graph-DFS.js'>DFS</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/dijkstraShortestPath.js'>dijkstra shortest path</a></li>
 <!-- <li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'></a></li> -->
 
 </details>
@@ -49,8 +49,8 @@
 <details>
 <summary>Tree Algos</summary>
 <br>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>BFS</a></li>
-<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'>DFS</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/tree-BFS.js'>BFS</a></li>
+<li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/tree-DFS.js'>DFS</a></li>
 <!-- <li><a href='https://github.com/kartikth40/DSA-javascript/blob/main/algorithms/'></a></li> -->
 
 </details>
