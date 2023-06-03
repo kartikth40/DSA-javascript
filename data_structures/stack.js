@@ -44,28 +44,3 @@ export default class Stack {
     console.log('stack --->', this.stack)
   }
 }
-
-const stack = new Stack(true)
-stack.push(0)
-stack.push(2)
-stack.push(4)
-stack.push(6)
-
-stack.print()
-stack.size()
-
-stack.pop()
-stack.print()
-stack.size()
-
-// outputs
-
-// pushing... 0
-// pushing... 2
-// pushing... 4
-// pushing... 6
-// stack ->  [ 0, 2, 4, 6 ]
-// getting size... 4
-// popping... 6
-// stack ->  [ 0, 2, 4 ]
-// getting size... 3

@@ -6,6 +6,9 @@
 // Space Complexity
 //         - O(V)
 
+import { Graph_adj_list } from '../data_structures/graph.js'
+import Queue from '../data_structures/queue.js'
+
 const graphBFS = (graph, root) => {
   let ans = []
   let visited = new Set()
@@ -30,7 +33,7 @@ const graphBFS = (graph, root) => {
   return ans
 }
 
-const graph = new Graph(5)
+const graph = new Graph_adj_list(5)
 graph.addEdge(0, 1)
 graph.addEdge(0, 2)
 graph.addEdge(0, 3)

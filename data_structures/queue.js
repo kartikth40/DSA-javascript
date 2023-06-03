@@ -93,28 +93,3 @@ export default class Queue {
     }
   }
 }
-
-const queue = new Queue(true)
-queue.enqueue(0)
-queue.enqueue(2)
-queue.enqueue(4)
-queue.enqueue(6)
-
-queue.print()
-queue.size()
-
-queue.dequeue()
-queue.print()
-queue.size()
-
-// outputs
-
-// enqueuing... 0
-// enqueuing... 2
-// enqueuing... 4
-// enqueuing... 6
-// 0 -> 2 -> 4 -> 6 -> null
-// getting size... 4
-// dequeuing... 0
-// 2 -> 4 -> 6 -> null
-// getting size... 3

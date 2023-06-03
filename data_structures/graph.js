@@ -16,6 +16,7 @@ export class Graph_adj_mat {
   constructor(size, printAllSteps = false) {
     this.size = size
     this.graph = []
+    this.printAllSteps = printAllSteps
     for (let i = 0; i < size; i++) {
       let curRow = []
       for (let j = 0; j < size; j++) {
@@ -23,6 +24,12 @@ export class Graph_adj_mat {
       }
       this.graph.push(curRow)
     }
+  }
+
+  getAdjacents(vertex) {
+    return this.graph[vertex]
+      .map((edge, index) => (edge ? index : -1))
+      .filter((val) => val >= 0)
   }
 
   addEdge(v1, v2) {
@@ -54,42 +61,6 @@ export class Graph_adj_mat {
   }
 }
 
-console.log('Adjacency Matrix')
-console.log()
-
-const graph_mat = new Graph_adj_mat(4)
-graph_mat.addEdge(0, 1)
-graph_mat.addEdge(0, 2)
-graph_mat.addEdge(0, 3)
-graph_mat.addEdge(1, 2)
-console.log()
-graph_mat.print()
-console.log()
-graph_mat.removeEdge(1, 2)
-console.log()
-graph_mat.print()
-
-// outputs
-
-// Adjacency Matrix
-
-// adding edge between 0 and 1...
-// adding edge between 0 and 2...
-// adding edge between 0 and 3...
-// adding edge between 1 and 2...
-
-// 0 1 1 1
-// 1 0 1 0
-// 1 1 0 0
-// 1 0 0 0
-
-// removing edge between 1 and 2...
-
-// 0 1 1 1
-// 1 0 0 0
-// 1 0 0 0
-// 1 0 0 0
-
 // Adjacency List
 
 // Time Complexity
@@ -107,6 +78,10 @@ export class Graph_adj_list {
   constructor(printAllSteps = false) {
     this.graph = new Map()
     this.printAllSteps = printAllSteps
+  }
+
+  getAdjacents(vertex) {
+    return Array.from(this.graph.get(vertex))
   }
 
   addEdge(v1, v2) {
@@ -149,40 +124,3 @@ export class Graph_adj_list {
     }
   }
 }
-
-console.log()
-console.log('Adjacency List')
-console.log()
-
-const graph_list = new Graph_adj_list()
-graph_list.addEdge(0, 1)
-graph_list.addEdge(0, 2)
-graph_list.addEdge(0, 3)
-graph_list.addEdge(1, 2)
-console.log()
-graph_list.print()
-console.log()
-graph_list.removeEdge(1, 2)
-console.log()
-graph_list.print()
-
-// outputs
-
-// Adjacency List
-
-// adding edge between 0 and 1...
-// adding edge between 0 and 2...
-// adding edge between 0 and 3...
-// adding edge between 1 and 2...
-
-// 0 -> 1,2,3
-// 1 -> 0,2
-// 2 -> 0,1
-// 3 -> 0
-
-// removing edge between 1 and 2...
-
-// 0 -> 1,2,3
-// 1 -> 0
-// 2 -> 0
-// 3 -> 0

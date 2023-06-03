@@ -88,39 +88,6 @@ export class MaxHeap {
   }
 }
 
-console.log('MAX HEAP')
-console.log()
-
-const maxHeap = new MaxHeap(true)
-maxHeap.add(3)
-maxHeap.add(4)
-maxHeap.add(9)
-maxHeap.add(5)
-maxHeap.add(2)
-maxHeap.add(1)
-maxHeap.add(7)
-
-maxHeap.print()
-
-maxHeap.popMax()
-
-maxHeap.print()
-
-// outputs
-
-// MAX HEAP
-
-// adding... 3
-// adding... 4
-// adding... 9
-// adding... 5
-// adding... 2
-// adding... 1
-// adding... 7
-// Heap -> 9,5,7,3,2,1,4
-// removing... 9
-// Heap -> 7,5,4,3,2,1
-
 // MIN HEAP
 
 // Time Complexity
@@ -210,37 +177,3 @@ export class MinHeap {
     console.log(`Min Heap -> ${this.heap}`)
   }
 }
-
-console.log()
-console.log('MIN HEAP')
-console.log()
-
-const minHeap = new MinHeap(true)
-minHeap.add(3)
-minHeap.add(4)
-minHeap.add(9)
-minHeap.add(5)
-minHeap.add(2)
-minHeap.add(1)
-minHeap.add(7)
-
-minHeap.print()
-
-minHeap.popMin()
-
-minHeap.print()
-
-// outputs
-
-// MIN HEAP
-
-// adding... 3
-// adding... 4
-// adding... 9
-// adding... 5
-// adding... 2
-// adding... 1
-// adding... 7
-// Min Heap -> 1,3,2,5,4,9,7
-// removing... 1
-// Min Heap -> 2,3,7,5,4,9

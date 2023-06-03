@@ -83,30 +83,3 @@ const deleteNode = (root, data) => {
 
   return root
 }
-
-let root = null
-root = insertNode(root, 8)
-root = insertNode(root, 3)
-root = insertNode(root, 10)
-root = insertNode(root, 1)
-root = insertNode(root, 6)
-root = insertNode(root, 4)
-
-console.log('BST -> ')
-console.log()
-inorder(root)
-console.log()
-console.log('deleting node 3')
-console.log()
-root = deleteNode(root, 3)
-inorder(root)
-
-// outputs
-
-// BST ->
-
-// [ 1, 3, 4, 6, 8, 10 ]
-
-// deleting node 3
-
-// [ 1, 4, 6, 8, 10 ]
