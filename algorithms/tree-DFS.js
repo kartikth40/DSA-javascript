@@ -15,27 +15,51 @@ class TreeNode {
 }
 
 const inorder = (root) => {
-  if (root) {
-    inorder(root.left)
-    console.log(root.val)
-    inorder(root.right)
+  function helperFunc(root, arr) {
+    if (root) {
+      helperFunc(root.left, arr)
+      arr.push(root.val)
+      helperFunc(root.right, arr)
+    }
+    return arr
   }
+
+  const inorderedList = helperFunc(root, [])
+  console.log(inorderedList)
+
+  return inorderedList
 }
 
 const preorder = (root) => {
-  if (root) {
-    console.log(root.val)
-    preorder(root.left)
-    preorder(root.right)
+  function helperFunc(root, arr) {
+    if (root) {
+      arr.push(root.val)
+      helperFunc(root.left, arr)
+      helperFunc(root.right, arr)
+    }
+    return arr
   }
+
+  const inorderedList = helperFunc(root, [])
+  console.log(inorderedList)
+
+  return inorderedList
 }
 
 const postorder = (root) => {
-  if (root) {
-    postorder(root.left)
-    postorder(root.right)
-    console.log(root.val)
+  function helperFunc(root, arr) {
+    if (root) {
+      helperFunc(root.left, arr)
+      helperFunc(root.right, arr)
+      arr.push(root.val)
+    }
+    return arr
   }
+
+  const inorderedList = helperFunc(root, [])
+  console.log(inorderedList)
+
+  return inorderedList
 }
 const root = new TreeNode(0)
 root.left = new TreeNode(1)
@@ -56,25 +80,10 @@ postorder(root)
 // // outputs
 
 // Inorder ->
-// 3
-// 1
-// 4
-// 0
-// 5
-// 2
+// [ 3, 1, 4, 0, 5, 2 ]
 
 // Preorder ->
-// 0
-// 1
-// 3
-// 4
-// 2
-// 5
+// [ 0, 1, 3, 4, 2, 5 ]
 
 // Postorder ->
-// 3
-// 4
-// 1
-// 5
-// 2
-// 0
+// [ 3, 4, 1, 5, 2, 0 ]

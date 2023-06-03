@@ -6,6 +6,8 @@
 // Space Complexity
 //         - O(V)
 
+import { Graph_adj_list } from '../data_structures/graph.js'
+
 const graphDFS = (graph, root) => {
   let ans = []
   let visited = new Set()
@@ -28,7 +30,7 @@ const graphDFS = (graph, root) => {
   return ans
 }
 
-const graph = new Graph(5)
+const graph = new Graph_adj_list()
 graph.addEdge(0, 1)
 graph.addEdge(0, 2)
 graph.addEdge(0, 3)

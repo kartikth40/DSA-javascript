@@ -1,12 +1,12 @@
 // TREE TRAVERSAL BFS
 
-import Queue from '../data_structures/queue.js'
-
 // Time Complexity
 //         - O(n)
 
 // Space Complexity
 //         - O(n)
+
+import Queue from '../data_structures/queue.js'
 
 class Node {
   constructor(data) {
