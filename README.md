@@ -15,7 +15,11 @@
 
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/containsDuplicate.js)|Easy|Array, Hash Table, Sorting|
 
-<!-- |[]()|[Solution]()|Easy Medium Hard|| -->
+|[242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy|Hash Table, String, Sorting|
+
+|[1. Two Sum](https://leetcode.com/problems/two-sum/)|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/twoSum.js)|Easy|Array, Hash Table|
+
+<!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
 ## Algorithms
 
