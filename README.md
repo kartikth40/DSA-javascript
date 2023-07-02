@@ -8,21 +8,15 @@
 
 ## LeetCode Problems
 
-| Title | Solution | Difficulty | Category |
-| :---- | :------- | :--------- | :------- |
-
-<!-- Easy -->
-
-| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/twoSum.js) | Easy | Array, Hash Table |
-| [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js) | Easy | Hash Table, String, Sorting |
-| [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/containsDuplicate.js) | Easy | Array, Hash Table, Sorting |
-|[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestCommonPrefix.js)|Easy|String, Trie|
-
-<!-- Medium -->
-
-| [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestConsecutive.js) | Medium | Array, Hash Table, Union Find |
-| [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestIncreasingSubsequence.js) | Medium | Array, Binary Search, Dynamic Programming |
-| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/topKfrequentElements.js) | Medium | Array, Hash Table, Sorting, Bucket Sort, Counting, Quickselect |
+| Title                                                                                                | Solution                                                                                                    | Difficulty | Category                                                       |
+| :--------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :--------- | :------------------------------------------------------------- |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/)                                                 | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/twoSum.js)                       | Easy       | Array, Hash Table                                              |
+| [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                   | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)                     | Easy       | Hash Table, String, Sorting                                    |
+| [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                         | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/containsDuplicate.js)            | Easy       | Array, Hash Table, Sorting                                     |
+| [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestCommonPrefix.js)          | Easy       | String, Trie                                                   |
+| [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)     | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestConsecutive.js)           | Medium     | Array, Hash Table, Union Find                                  |
+| [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestIncreasingSubsequence.js) | Medium     | Array, Binary Search, Dynamic Programming                      |
+| [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)               | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/topKfrequentElements.js)         | Medium     | Array, Hash Table, Sorting, Bucket Sort, Counting, Quickselect |
 
 <!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
