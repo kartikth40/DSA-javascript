@@ -7,9 +7,6 @@
 // Input: nums = [1,2,3,1]
 // Output: true
 
-// @param {number[]} nums
-// @return {boolean}
-
 const containsDuplicate = (nums) => {
   const set = new Set()
   for (let i = 0; i < nums.length; i++) {

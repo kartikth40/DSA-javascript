@@ -13,6 +13,8 @@
 | [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestIncreasingSubsequence.js) | Medium     | Array, Binary Search, Dynamic Programming                      |
 | [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)               | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/topKfrequentElements.js)         | Medium     | Array, Hash Table, Sorting, Bucket Sort, Counting, Quickselect |
 
+|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/containsDuplicate.js)|Easy|Array, Hash Table, Sorting|
+
 <!-- |[]()|[Solution]()|Easy Medium Hard|| -->
 
 ## Algorithms
