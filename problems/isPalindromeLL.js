@@ -3,11 +3,11 @@
 // if it is a palindrome or false otherwise.
 // https://leetcode.com/problems/palindrome-linked-list/
 
-import { ListNode } from '../data_structures/LinkedList.js'
-
 // for example =>
 // Input: head = [1,2,2,1]
 // Output: true
+
+import { ListNode } from '../data_structures/LinkedList.js'
 
 const isPalindrome = (head) => {
   let slow = head
