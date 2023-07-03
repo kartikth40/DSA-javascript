@@ -29,6 +29,7 @@
 | [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                           | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/evalRPN.js)                      | Medium     | Array, Math, Stack                                               |
 | [15. 3Sum](https://leetcode.com/problems/3sum/)                                                                                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/threeSum.js)                     | Medium     | Array, Two Pointers, Sorting                                     |
 | [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                                                      | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/trap.js)                         | Hard       | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
+| [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)                                | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/largestRectangleArea.js)         | Hard       | Array, Stack, Monotonic Stack                                    |
 
 <!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
