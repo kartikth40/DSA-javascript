@@ -43,6 +43,7 @@
 | [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                                                        | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/minEatingSpeed.js)               | Medium     | Array, Binary Search                                             |
 | [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                                                                         | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/trap.js)                         | Hard       | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)                                                   | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/largestRectangleArea.js)         | Hard       | Array, Stack, Monotonic Stack                                    |
+| [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                          | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/findMedianSortedArrays.js)       | Hard       |                                                                  |
 
 <!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
