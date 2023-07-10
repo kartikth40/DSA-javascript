@@ -9,8 +9,8 @@
 import Queue from '../data_structures/queue.js'
 
 class Node {
-  constructor(data) {
-    this.data = data
+  constructor(val) {
+    this.val = val
     this.next = null
   }
 }
@@ -51,7 +51,7 @@ class QueueC {
 
     this.length--
 
-    return temp.data
+    return temp.val
   }
 
   isEmpty() {

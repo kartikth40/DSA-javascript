@@ -9,9 +9,9 @@
 //         - O(n)
 
 export class ListNode {
-  constructor(data) {
-    this.data = data
-    this.next = null
+  constructor(val, next) {
+    this.val = val === undefined ? 0 : val
+    this.next = next === undefined ? null : next
   }
 }
 
@@ -52,7 +52,7 @@ export default class LinkedList {
     let node = this.head
     let output = []
     while (node) {
-      output.push(node.data)
+      output.push(node.val)
       node = node.next
     }
     print(output)

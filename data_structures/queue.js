@@ -10,7 +10,7 @@
 
 class Node {
   constructor(data) {
-    this.data = data
+    this.val = data
     this.next = null
   }
 }
@@ -45,7 +45,7 @@ export default class Queue {
     }
 
     let temp = this.front
-    this.printAllSteps && console.log('dequeuing...', temp.data)
+    this.printAllSteps && console.log('dequeuing...', temp.val)
 
     this.front = this.front.next
 
@@ -55,13 +55,13 @@ export default class Queue {
 
     this.length--
 
-    return temp.data
+    return temp.val
   }
 
   peek() {
     if (this.front) {
-      this.printAllSteps && console.log('peeking...', this.front.data)
-      return this.front.data
+      this.printAllSteps && console.log('peeking...', this.front.val)
+      return this.front.val
     } else {
       this.printAllSteps && console.log('Queue is empty.')
       return
@@ -84,7 +84,7 @@ export default class Queue {
     } else {
       let q = ''
       while (cur) {
-        q += cur.data + ' -> '
+        q += cur.val + ' -> '
         cur = cur.next
       }
       q += 'null'

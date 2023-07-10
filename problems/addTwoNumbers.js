@@ -18,11 +18,11 @@ const addTwoNumbers = (l1, l2) => {
 
   while (l1 !== null || l2 !== null) {
     if (l1 !== null) {
-      currentSum += l1.data
+      currentSum += l1.val
       l1 = l1.next
     }
     if (l2 !== null) {
-      currentSum += l2.data
+      currentSum += l2.val
       l2 = l2.next
     }
 
