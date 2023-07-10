@@ -8,7 +8,7 @@
 
 import { TreeNode } from '../data_structures/tree.js'
 
-const isSameTree = (p, q) => {
+export const isSameTree = (p, q) => {
   if (!p && !q) return true
   if (!p || !q) return false
 
