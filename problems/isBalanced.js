@@ -6,7 +6,7 @@
 // Input: root = [3,9,20,null,null,15,7]
 // Output: true
 
-import { TreeNode } from '../data_structures/Tree.js'
+import { TreeNode } from '../data_structures/tree.js'
 
 const isBalanced = (root) => {
   return check(root) !== -1

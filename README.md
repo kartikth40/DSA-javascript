@@ -18,6 +18,8 @@
 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                                | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/maxProfit.js)                    | Easy       | Array, Dynamic Programming                                       |
 | [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                                                  | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/isPalindromeLL.js)               | Easy       | Linked List, Two Pointers, Stack, Recursion                      |
 | [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                                            | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/hasCycle.js)                     | Easy       | Hash Table, Linked List, Two Pointers                            |
+| [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                      | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/isBalanced.js)                   | Easy       | Tree, DFS                                                        |
+| [100. Same Tree](https://leetcode.com/problems/same-tree/)                                                                                            | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/isSameTree.js)                   | Easy       | Tree, DFS, BFS                                                   |
 | [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                              | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/getIntersectionNode.js)          | Medium     | Hash Table, Linked List, Two Pointers                            |
 | [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)                                                                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/checkInclusion.js)               | Medium     | Hash Table, Two Pointers, String, Sliding Window                 |
 | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                      | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/longestPalindrome.js)            | Medium     | String, Dynamic Programming                                      |
@@ -93,6 +95,9 @@
 
 - [Stack](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/stack.js)
 - [Queue](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/queue.js)
+- [Linked List](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/linkedList.js)
 - [Heap](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/heap.js)
 - [Graph](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/graph.js)
+- [Tree](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/tree.js)
+- [BST](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/binarySearchTree.js)
 - [Trie](https://github.com/kartikth40/DSA-javascript/blob/main/data_structures/trie.js)

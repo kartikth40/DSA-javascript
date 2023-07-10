@@ -9,7 +9,7 @@
 // Input: l1 = [2,4,3], l2 = [5,6,4]
 // Output: [7,0,8]
 
-import { ListNode } from '../data_structures/LinkedList.js'
+import { ListNode } from '../data_structures/linkedList.js'
 
 const addTwoNumbers = (l1, l2) => {
   let result = new ListNode(0)

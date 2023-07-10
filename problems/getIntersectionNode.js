@@ -8,7 +8,7 @@
 // Input: listA = [1,9,1,2,4], listB = [3,2,4]
 // Output: '2'
 
-import { ListNode } from '../data_structures/LinkedList.js'
+import { ListNode } from '../data_structures/linkedList.js'
 
 const getIntersectionNode = (headA, headB) => {
   let a = headA

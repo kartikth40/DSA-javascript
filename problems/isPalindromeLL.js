@@ -7,7 +7,7 @@
 // Input: head = [1,2,2,1]
 // Output: true
 
-import { ListNode } from '../data_structures/LinkedList.js'
+import { ListNode } from '../data_structures/linkedList.js'
 
 const isPalindrome = (head) => {
   let slow = head

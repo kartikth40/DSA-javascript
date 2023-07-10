@@ -6,7 +6,7 @@
 // Input: head = [3,2,0,-4], pos = 1
 // Output: true
 
-import { ListNode } from '../data_structures/LinkedList.js'
+import { ListNode } from '../data_structures/linkedList.js'
 
 const hasCycle = (head) => {
   let slow = head

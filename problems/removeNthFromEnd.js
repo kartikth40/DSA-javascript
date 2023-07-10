@@ -7,7 +7,7 @@
 // Input: head = [1,2,3,4,5], n = 2
 // Output: [1,2,3,5]
 
-import { ListNode } from '../data_structures/LinkedList.js'
+import { ListNode } from '../data_structures/linkedList.js'
 
 const removeNthFromEnd = (head, n) => {
   let slow = head
