@@ -9,39 +9,26 @@
 // Output: 10
 
 const largestRectangleArea = (heights) => {
-  const sorted = [...heights].sort().reverse()
-  let ans = 0
-  let first = false
-  for (let i = 0; i < heights.length; i++) {
-    let left = heights.indexOf(sorted[i])
-    let right = heights.indexOf(sorted[i])
-    let curmax = 0
-    while (left >= 0 && right < heights.length) {
-      if (
-        Math.min(heights[left], heights[left - 1]) * (right - left + 1) >
-        curmax
-      ) {
-        curmax = Math.min(heights[left], heights[left - 1]) * (right - left + 1)
-        left--
-      } else break
-      if (
-        Math.min(heights[right], heights[right + 1]) * (right - left + 1) >
-        curmax
-      ) {
-        curmax =
-          Math.min(heights[right], heights[right + 1]) * (right - left + 1)
-        right++
-      } else {
-        break
-      }
+  let stack = [] // pair: [index, height]
+  let maxArea = 0
 
-      if (!first) {
-        first = true
-      }
+  for (let i = 0; i < heights.length; i++) {
+    let startIdx = i
+    while (stack.length > 0 && stack[stack.length - 1][1] > heights[i]) {
+      let [idx, h] = stack.pop()
+      let area = h * (i - idx)
+      maxArea = Math.max(maxArea, area)
+      startIdx = idx
     }
-    ans = Math.max(ans, curmax)
+    stack.push([startIdx, heights[i]])
   }
-  return ans
+
+  while (stack.length > 0) {
+    let [idx, h] = stack.pop()
+    let area = h * (heights.length - idx)
+    maxArea = Math.max(maxArea, area)
+  }
+  return maxArea
 }
 
 const heights = [2, 1, 5, 6, 2, 3]
