@@ -58,6 +58,7 @@
 | [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)                                                        | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/largestRectangleArea.js)         | Hard       | Array, Stack, Monotonic Stack                                  |
 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                               | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/findMedianSortedArrays.js)       | Hard       |                                                                |
 | [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)                                                                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/reverseKGroup.js)                | Hard       | Linked List, Recursion                                         |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                            | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/maxSlidingWindow.js)             | Hard       | Array, Queue, Sliging Window, Heap                             |
 
 <!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
