@@ -64,6 +64,7 @@
 | [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)                                                                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/reverseKGroup.js)                | Hard       | Linked List, Recursion                                         |
 | [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/minWindow.js)                    | Hard       | Hash Table, String, Sliding Window                             |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                            | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/maxSlidingWindow.js)             | Hard       | Array, Queue, Sliging Window, Heap                             |
+| [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                         | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/serializeDeserialize.js)         | Hard       | String, Tree, DFS, BFS                                         |
 
 <!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
