@@ -65,6 +65,7 @@
 | [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                                    | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/minWindow.js)                    | Hard       | Hash Table, String, Sliding Window                             |
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                                            | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/maxSlidingWindow.js)             | Hard       | Array, Queue, Sliging Window, Heap                             |
 | [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)                                         | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/serializeDeserialize.js)         | Hard       | String, Tree, DFS, BFS                                         |
+| [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                           | [Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/maxPathSum.js)                   | Hard       | DP, Tree, DFS                                                  |
 
 <!-- |[]()|[Solution](https://github.com/kartikth40/DSA-javascript/blob/main/problems/__name__.js)|Easy Medium Hard|| -->
 
