@@ -11,70 +11,67 @@
 export class MaxHeap {
   constructor(printAllSteps = false) {
     this.heap = []
+    this.size = 0
     this.printAllSteps = printAllSteps
   }
 
-  heapify(heap, n, i) {
+  heapify(i) {
     let largest = i
     let l = 2 * i + 1
     let r = 2 * i + 2
 
-    if (l < n && heap[i] < heap[l]) {
+    if (l < this.size && this.heap[i] < this.heap[l]) {
       largest = l
     }
-    if (r < n && heap[largest] < heap[r]) {
+    if (r < this.size && this.heap[largest] < this.heap[r]) {
       largest = r
     }
 
     if (i !== largest) {
-      let temp = heap[i]
-      heap[i] = heap[largest]
-      heap[largest] = temp
-      this.heapify(heap, n, largest)
+      let temp = this.heap[i]
+      this.heap[i] = this.heap[largest]
+      this.heap[largest] = temp
+      this.heapify(largest)
     }
   }
 
   add(ele) {
     this.printAllSteps && console.log('adding...', ele)
-
-    let size = this.heap.length
-    if (size === 0) {
+    if (this.size === 0) {
+      console.log('first')
+      this.size++
       this.heap.push(ele)
     } else {
+      this.size++
       this.heap.push(ele)
-      size++
-      for (let i = parseInt(size / 2) - 1; i >= 0; i--) {
-        this.heapify(this.heap, size, i)
+      for (let i = parseInt(this.size / 2) - 1; i >= 0; i--) {
+        this.heapify(i)
       }
     }
   }
 
   popMax() {
-    let size = this.heap.length
-    if (size === 0) {
+    if (this.size === 0) {
       this.printAllSteps && console.log('heap is empty.')
       return
     }
 
     this.printAllSteps && console.log('removing...', this.heap[0])
-
     let temp = this.heap[0]
-    this.heap[0] = this.heap[size - 1]
-    this.heap[size - 1] = temp
+    this.heap[0] = this.heap[this.size - 1]
+    this.heap[this.size - 1] = temp
 
     let maxEle = this.heap.pop()
-    size--
+    this.size--
 
-    for (let i = parseInt(size / 2) - 1; i >= 0; i--) {
-      this.heapify(this.heap, size, i)
+    for (let i = parseInt(this.size / 2) - 1; i >= 0; i--) {
+      this.heapify(i)
     }
 
     return maxEle
   }
-
   getMax() {
-    let size = this.heap.length
-    if (size !== 0) {
+    if (this.size !== 0) {
       this.printAllSteps && console.log('getting max...', this.heap[0])
       return this.heap[0]
     } else {
@@ -101,47 +98,47 @@ export class MaxHeap {
 export class MinHeap {
   constructor(printAllSteps = false) {
     this.heap = []
+    this.size = 0
     this.printAllSteps = printAllSteps
   }
 
-  heapify(heap, n, i) {
+  heapify(i) {
     let smallest = i
     let l = 2 * i + 1
     let r = 2 * i + 2
 
-    if (l < n && heap[i] > heap[l]) {
+    if (l < this.size && this.heap[i] > this.heap[l]) {
       smallest = l
     }
-    if (r < n && heap[smallest] > heap[r]) {
+    if (r < this.size && this.heap[smallest] > this.heap[r]) {
       smallest = r
     }
 
     if (i !== smallest) {
-      let temp = heap[i]
-      heap[i] = heap[smallest]
-      heap[smallest] = temp
-      this.heapify(heap, n, smallest)
+      let temp = this.heap[i]
+      this.heap[i] = this.heap[smallest]
+      this.heap[smallest] = temp
+      this.heapify(smallest)
     }
   }
 
   add(ele) {
     this.printAllSteps && console.log('adding...', ele)
 
-    let size = this.heap.length
-    if (size === 0) {
+    if (this.size === 0) {
       this.heap.push(ele)
+      this.size++
     } else {
       this.heap.push(ele)
-      size++
-      for (let i = parseInt(size / 2) - 1; i >= 0; i--) {
-        this.heapify(this.heap, size, i)
+      this.size++
+      for (let i = parseInt(this.size / 2) - 1; i >= 0; i--) {
+        this.heapify(i)
       }
     }
   }
 
   popMin() {
-    let size = this.heap.length
-    if (size === 0) {
+    if (this.size === 0) {
       this.printAllSteps && console.log('heap is empty.')
       return
     }
@@ -149,22 +146,21 @@ export class MinHeap {
     this.printAllSteps && console.log('removing...', this.heap[0])
 
     let temp = this.heap[0]
-    this.heap[0] = this.heap[size - 1]
-    this.heap[size - 1] = temp
+    this.heap[0] = this.heap[this.size - 1]
+    this.heap[this.size - 1] = temp
 
     let minEle = this.heap.pop()
-    size--
+    this.size--
 
-    for (let i = parseInt(size / 2) - 1; i >= 0; i--) {
-      this.heapify(this.heap, size, i)
+    for (let i = parseInt(this.size / 2) - 1; i >= 0; i--) {
+      this.heapify(i)
     }
 
     return minEle
   }
 
   getMin() {
-    let size = this.heap.length
-    if (size !== 0) {
+    if (this.size !== 0) {
       this.printAllSteps && console.log('getting max...', this.heap[0])
       return this.heap[0]
     } else {
