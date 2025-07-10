@@ -8,42 +8,37 @@
 // Space Complexity
 //         - O(n)
 
-const mergeSort = (array) => {
-  if (array.length > 1) {
-    let mid = Math.floor(array.length / 2)
+function mergeSort(nums) {
+    if (nums.length === 0) return []
+    return mergeSortRecursive(0, nums.length - 1, nums)
+}
 
-    let leftHalf = array.slice(0, mid)
-    let rightHalf = array.slice(mid, array.length)
+function mergeSortRecursive(start, end, nums) {
+    if (start === end) return [nums[start]]
 
-    mergeSort(leftHalf)
-    mergeSort(rightHalf)
+    const mid = Math.floor((start + end) / 2)
+    const leftSorted = mergeSortRecursive(start, mid, nums)
+    const rightSorted = mergeSortRecursive(mid + 1, end, nums)
 
-    let i = 0
-    let j = 0
-    let k = 0
+    return mergeArrays(leftSorted, rightSorted)
+}
 
-    while (i < leftHalf.length && j < rightHalf.length) {
-      if (leftHalf[i] < rightHalf[j]) {
-        array[k] = leftHalf[i]
-        i++
-      } else {
-        array[k] = rightHalf[j]
-        j++
-      }
-      k++
+function mergeArrays(left, right) {
+    const merged = []
+    let i = 0, j = 0
+
+    while (i < left.length && j < right.length) {
+        if (left[i] < right[j]) {
+            merged.push(left[i++])
+        } else {
+            merged.push(right[j++])
+        }
     }
 
-    while (i < leftHalf.length) {
-      array[k] = leftHalf[i]
-      i++
-      k++
-    }
-    while (j < rightHalf.length) {
-      array[k] = rightHalf[j]
-      j++
-      k++
-    }
-  }
+    while (i < left.length) merged.push(left[i++])
+    while (j < right.length) merged.push(right[j++])
+
+    return merged
 }
 
 let arr = [3, 7, 5, 8, 1, 2, 6, 4, 0, 9]
